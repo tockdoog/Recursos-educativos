@@ -9,7 +9,7 @@ body {
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -44,8 +44,27 @@ blockquote {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
+    background-color: #35424a;
     color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social-media, .quick-links {
+    margin: 10px 0;
 }
