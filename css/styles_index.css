@@ -1,3 +1,15 @@
+/* Variables de color */
+:root {
+    --color-primary: #e2d413;
+    --color-secondary: #333;
+    --color-background: #858585d2;
+    --color-footer: #333;
+    --color-footer-text: #f4f4f4;
+    --color-hover: #1e90ff;
+    --color-muted: #666;
+    --color-light: #fff;
+}
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -5,12 +17,28 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--color-secondary);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 /* Estilos del header */
 header {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-primary);
+    color: var(--color-light);
     padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     width: 100%;
@@ -25,15 +53,14 @@ header {
     padding: 0 20px;
 }
 
-/* Estilos del logo */
 .logo a {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: var(--color-secondary);
 }
 
-/* Estilos de la navegación */
+/* Estilos de navegación */
 nav {
     flex-grow: 1;
     text-align: right;
@@ -41,67 +68,28 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline-block;
     margin-left: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
+    color: var(--color-secondary);
     padding: 10px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ffffff;
-}
-/*---------------------------------------------------------------------*/
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #858585d2;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #333;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-header {
-    background-color: #e2d413;
-    color: #fff;
-    padding: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-top: 40px;
+    color: var(--color-light);
 }
 
 /* Sección de artículos e imágenes */
 .articulo, .videos, .imagenes-adicionales {
-    background-color: #fff;
+    background-color: var(--color-light);
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -133,7 +121,7 @@ h2 {
 
 .galeria p {
     margin-top: 10px;
-    color: #666;
+    color: var(--color-muted);
     font-size: 0.9rem;
 }
 
@@ -153,7 +141,7 @@ h2 {
 .videos .video-item p {
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--color-muted);
 }
 
 /* Estilos responsivos */
@@ -167,13 +155,13 @@ h2 {
     }
 }
 
-/*------------------------------------------------------------------*/
+/* Estilos de pie de página */
 footer {
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
     padding: 40px 0;
     text-align: center;
-    border-top: 4px solid #007ACC;
+    border-top: 4px solid var(--color-hover);
 }
 
 .footer-container {
@@ -189,13 +177,13 @@ footer {
 .footer-links a {
     margin: 0 15px;
     text-decoration: none;
-    color: #f4f4f4;
+    color: var(--color-footer-text);
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #1e90ff;
+    color: var(--color-hover);
 }
 
 .footer-social {
@@ -222,7 +210,7 @@ footer p {
     margin-top: 10px;
 }
 
-/* Responsivo */
+/* Responsivo para footer */
 @media (max-width: 768px) {
     .footer-links a {
         display: block;
