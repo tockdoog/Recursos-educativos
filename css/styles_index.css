@@ -1,3 +1,15 @@
+/* Variables de color */
+:root {
+    --color-primary: #e2d413;
+    --color-secondary: #333;
+    --color-background: #858585d2;
+    --color-footer: #333;
+    --color-footer-text: #f4f4f4;
+    --color-hover: #1e90ff;
+    --color-muted: #666;
+    --color-light: #fff;
+}
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -46,10 +58,10 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline-block;
     margin-left: 20px;
 }
 
@@ -84,7 +96,7 @@ h2 {
 
 /* Sección de artículos e imágenes */
 .articulo, .videos, .imagenes-adicionales {
-    background-color: #fff;
+    background-color: var(--color-light);
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -117,7 +129,7 @@ h2 {
 
 .galeria p {
     margin-top: 10px;
-    color: #666;
+    color: var(--color-muted);
     font-size: 0.9rem;
 }
 
@@ -137,7 +149,7 @@ h2 {
 .videos .video-item p {
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--color-muted);
 }
 
 /* Estilos responsivos */
@@ -153,8 +165,8 @@ h2 {
 
 /* Estilos del footer */
 footer {
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
     padding: 40px 0;
     text-align: center;
     border-top: 4px solid #007ACC;
@@ -174,7 +186,7 @@ footer {
 .footer-links a {
     margin: 0 15px;
     text-decoration: none;
-    color: #f4f4f4;
+    color: var(--color-footer-text);
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
@@ -207,7 +219,7 @@ footer p {
     margin-top: 10px;
 }
 
-/* Responsivo */
+/* Responsivo para footer */
 @media (max-width: 768px) {
     .footer-links a {
         display: block;
