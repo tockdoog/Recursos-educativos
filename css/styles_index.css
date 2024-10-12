@@ -19,29 +19,20 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-secondary);
+    background-color: #f4f4f4; /* Cambié el fondo a un color más suave */
+    color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
-h1, h2 {
-    color: var(--color-secondary);
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilos del header */
+/* Encabezado */
 header {
-    background-color: var(--color-primary);
-    color: var(--color-light);
+    background-color: #e2d413; /* Color de fondo del header */
+    color: #fff;
     padding: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    width: 100%;
 }
 
 .container {
@@ -54,13 +45,12 @@ header {
 }
 
 .logo a {
-    font-size: 24px;
+    font-size: 28px; /* Aumenté el tamaño de la fuente para mayor visibilidad */
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-secondary);
+    color: #fff; /* Cambié el color del logo para que contraste mejor */
 }
 
-/* Estilos de navegación */
 nav {
     flex-grow: 1;
     text-align: right;
@@ -78,13 +68,30 @@ nav {
 .nav-links a {
     text-decoration: none;
     font-size: 16px;
-    color: var(--color-secondary);
+    color: #fff; /* Color blanco para los enlaces del nav */
     padding: 10px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--color-light);
+    color: #ffd700; /* Color dorado al pasar el mouse */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
 }
 
 /* Sección de artículos e imágenes */
@@ -101,6 +108,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Centra los elementos dentro de la galería */
 }
 
 .galeria .item {
@@ -155,13 +163,14 @@ nav {
     }
 }
 
-/* Estilos de pie de página */
+/* Estilos del footer */
 footer {
     background-color: var(--color-footer);
     color: var(--color-footer-text);
     padding: 40px 0;
     text-align: center;
-    border-top: 4px solid var(--color-hover);
+    border-top: 4px solid #007ACC;
+    margin-top: 40px; /* Añadido margen superior para separar del contenido */
 }
 
 .footer-container {
@@ -183,7 +192,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--color-hover);
+    color: #1e90ff; /* Color azul al pasar el mouse */
 }
 
 .footer-social {
