@@ -169,7 +169,7 @@ footer {
     color: var(--color-footer-text);
     padding: 40px 0;
     text-align: center;
-    border-top: 4px solid #007ACC;
+    border-top: 4px solid #333;
     margin-top: 40px; /* Añadido margen superior para separar del contenido */
 }
 
