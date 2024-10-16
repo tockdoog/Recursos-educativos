@@ -171,15 +171,37 @@ footer {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente los elementos */
     padding: 0 var(--padding-base);
 }
 
-.footer-links {
+.footer-links,
+.footer-social,
+.footer-info {
     margin-bottom: 20px;
 }
 
+.footer-links h4,
+.footer-social h4,
+.footer-info h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-light); /* Cambia a un color más claro para mejor visibilidad */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado horizontal entre los enlaces */
+}
+
 .footer-links a {
-    margin: 0 15px;
     text-decoration: none;
     color: var(--color-footer-text);
     font-size: var(--font-size-small);
@@ -190,25 +212,18 @@ footer {
     color: var(--color-hover);
 }
 
-.footer-social {
-    margin-bottom: 20px;
-}
-
 .footer-social a {
     margin: 0 10px;
+    font-size: 24px; /* Aumenta el tamaño de los iconos */
+    color: var(--color-footer-text);
+    transition: color 0.3s ease;
 }
 
-.footer-social img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
+.footer-social a:hover {
+    color: var(--color-hover);
 }
 
-.footer-social img:hover {
-    transform: scale(1.2);
-}
-
-footer p {
+.footer-info p {
     font-size: var(--font-size-footer);
     color: #bbb;
     margin-top: 10px;
@@ -216,13 +231,17 @@ footer p {
 
 /* Responsivo para footer */
 @media (max-width: 768px) {
-    .footer-links a {
-        display: block;
-        margin: 10px 0;
+    .footer-container {
+        flex-direction: column; /* Asegura que todo se apile verticalmente en móviles */
+        align-items: center;
     }
 
-    .footer-social img {
-        width: 32px;
-        height: 32px;
+    .footer-links a {
+        display: block;
+        margin: 10px 0; /* Espaciado vertical en móviles */
+    }
+
+    .footer-social a {
+        margin: 0 5px; /* Espaciado más pequeño entre iconos */
     }
 }
