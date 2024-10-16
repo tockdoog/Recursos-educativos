@@ -8,6 +8,10 @@
     --color-hover: #1e90ff;
     --color-muted: #666;
     --color-light: #fff;
+    --font-size-base: 16px;
+    --font-size-small: 0.9rem;
+    --font-size-footer: 0.8rem;
+    --padding-base: 20px;
 }
 
 /* Estilos generales */
@@ -19,41 +23,26 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-<<<<<<< HEAD
     background-color: var(--color-background);
     color: var(--color-secondary);
     line-height: 1.6;
-    padding: 20px;
+    padding: var(--padding-base);
 }
 
 h1, h2 {
     color: var(--color-secondary);
     font-weight: 300;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--padding-base);
 }
-=======
-    background-color: #f4f4f4; /* Cambié el fondo a un color más suave */
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 
 /* Encabezado */
 header {
-<<<<<<< HEAD
     background-color: var(--color-primary);
     color: var(--color-light);
-    padding: 20px 0;
+    padding: var(--padding-base) 0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-=======
-    background-color: #e2d413; /* Color de fondo del header */
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
     position: sticky;
     top: 0;
 }
@@ -64,23 +53,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 var(--padding-base);
 }
 
 .logo a {
-    font-size: 28px; /* Aumenté el tamaño de la fuente para mayor visibilidad */
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-<<<<<<< HEAD
     color: var(--color-secondary);
 }
 
 /* Estilos de navegación */
-=======
-    color: #fff; /* Cambié el color del logo para que contraste mejor */
-}
-
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 nav {
     flex-grow: 1;
     text-align: right;
@@ -92,50 +75,25 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: var(--padding-base);
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 16px;
-<<<<<<< HEAD
+    font-size: var(--font-size-base);
     color: var(--color-secondary);
-=======
-    color: #fff; /* Color blanco para los enlaces del nav */
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
     padding: 10px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-<<<<<<< HEAD
     color: var(--color-light);
-=======
-    color: #ffd700; /* Color dorado al pasar el mouse */
-}
-
-/* Títulos */
-h1, h2 {
-    color: #333;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-top: 40px;
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 }
 
 /* Sección de artículos e imágenes */
 .articulo, .videos, .imagenes-adicionales {
     background-color: var(--color-light);
-    padding: 20px;
+    padding: var(--padding-base);
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -146,7 +104,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* Centra los elementos dentro de la galería */
+    justify-content: center;
 }
 
 .galeria .item {
@@ -168,7 +126,7 @@ h2 {
 .galeria p {
     margin-top: 10px;
     color: var(--color-muted);
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
 }
 
 /* Estilos de videos */
@@ -186,7 +144,7 @@ h2 {
 
 .videos .video-item p {
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
     color: var(--color-muted);
 }
 
@@ -201,28 +159,19 @@ h2 {
     }
 }
 
-<<<<<<< HEAD
 /* Estilos de pie de página */
-=======
-/* Estilos del footer */
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 footer {
     background-color: var(--color-footer);
     color: var(--color-footer-text);
     padding: 40px 0;
     text-align: center;
-<<<<<<< HEAD
     border-top: 4px solid var(--color-hover);
-=======
-    border-top: 4px solid #007ACC;
-    margin-top: 40px; /* Añadido margen superior para separar del contenido */
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--padding-base);
 }
 
 .footer-links {
@@ -233,16 +182,12 @@ footer {
     margin: 0 15px;
     text-decoration: none;
     color: var(--color-footer-text);
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-<<<<<<< HEAD
     color: var(--color-hover);
-=======
-    color: #1e90ff; /* Color azul al pasar el mouse */
->>>>>>> 16017441db3d746f9d16a865850bf558678b1e94
 }
 
 .footer-social {
@@ -264,7 +209,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.8rem;
+    font-size: var(--font-size-footer);
     color: #bbb;
     margin-top: 10px;
 }
