@@ -19,7 +19,7 @@ MongoDB: Para el almacenamiento robusto de datos. 💾
 ¡Tu voz es importante! Si tienes recursos que quisieras compartir o ideas para mejorar la plataforma, no dudes en abrir un issue o enviar una pull request. ¡Cada contribución cuenta! 🌍❤️
 
 📦 Instalación
-Clona el repositorio: git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+Clona el repositorio: git clone git@github.com:tockdoog/Recursos-educativos.git
 Navega a la carpeta del proyecto: cd nombre-del-repositorio
 Instala las dependencias: npm install
 Inicia la aplicación: npm start
