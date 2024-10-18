@@ -1,0 +1,13 @@
+Para antes de subir los archivos del repositorio toca descomprimir la imagen
+Las imagenes son binarios por lo cual pesan mucho
+usar pagina para descomprimirlo
+-------------------------------------------------------------------
+Sugerencias:
+Para descomprimir una imagen
+https://tinypng.com/
+Para ideas de imagenes sin tanto peso
+https://www.pexels.com/es-es/
+Videos
+https://coverr.co/
+--------------------------------------------------------------------
+Se dividirá las imagenes por tema
