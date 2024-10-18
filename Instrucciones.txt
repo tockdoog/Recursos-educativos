@@ -1,44 +1,49 @@
-Instructivo para Nuevos Colaboradores
-¡Bienvenidos al proyecto del Sitio Web de Recursos Educativos! Para facilitar la comprensión y el uso de la estructura del proyecto, hemos preparado este instructivo. A continuación, se resaltan las carpetas, archivos e instrucciones más importantes que deben conocer.
+🌟 Instructivo para Nuevos Colaboradores
+¡🎉 Bienvenidos al emocionante proyecto del Sitio Web de Recursos Educativos! Para que puedas navegar y utilizar la estructura del proyecto con facilidad, hemos preparado este instructivo. A continuación, te presentamos las carpetas, archivos e instrucciones más importantes que debes conocer. 🚀
 
-Estructura del Proyecto
-Archivos Principales
-index.html
+📁 Estructura del Proyecto
+📄 Archivos Principales
+index.html:
+La página principal que presenta el proyecto y enlaza a las diferentes secciones. 🏠
 
-Página principal que presenta el proyecto y enlaza a las diferentes secciones.
-resources.html
+resources.html:
+Página que lista todos los recursos educativos, categorizados por tema. 📚
 
-Página que lista todos los recursos educativos, categorizados por tema.
-about.html
+about.html:
+Información sobre el propósito del sitio y los autores. 👥
 
-Página con información sobre el propósito del sitio y los autores.
-contact.html
+contact.html:
+Página con un formulario de contacto. 📞
 
-Página con un formulario de contacto.
-styles.css
+styles.css:
+Archivo CSS que da estilo al sitio. 🎨
 
-Archivo CSS para dar estilo al sitio.
-README.md
+README.md:
+Documentación sobre cómo configurar y utilizar el proyecto. 📖
 
-Documentación sobre cómo configurar y utilizar el proyecto.
-Tareas Divididas
-Persona A
+🛠️ Tareas Divididas
+👩‍💻 Persona A
 Crear y estructurar index.html y about.html.
 Diseñar un layout atractivo y responsivo utilizando styles.css.
-Persona B
+👨‍💻 Persona B
 Crear resources.html y contact.html.
 Implementar un formulario de contacto en contact.html que valide la entrada (solo HTML básico, sin JavaScript).
-Proceso de Colaboración
-1. Configurar el Repositorio
-Crear un nuevo repositorio en GitHub llamado recursos-educativos.
-Clonar el repositorio en sus máquinas locales.
-2. Uso de Ramas
-Usar ramas para trabajar en características separadas. Ejemplo: feature/pagina-principal para la página de inicio.
-3. Commits y Pull Requests
-Hacer commits frecuentemente con mensajes descriptivos. Ejemplo: git commit -m "Crear página de inicio".Cuando terminen una funcionalidad, hacer un pull request para revisión.
-4. Revisar y Fusionar
-Revisar el código de su compañero en los pull requests y sugerir mejoras.
-Una vez aprobado, fusionar las ramas en main.
-5. Despliegue
-Usar GitHub Pages para publicar su sitio web y compartirlo.
+🤝 Proceso de Colaboración
+Configurar el Repositorio
 
+Crear un nuevo repositorio en GitHub llamado recursos-educativos. 🌐
+Clonar el repositorio en sus máquinas locales. 💻
+Uso de Ramas
+
+Usar ramas para trabajar en características separadas. Ejemplo: feature/pagina-principal para la página de inicio. 🌿
+Commits y Pull Requests
+
+Hacer commits frecuentemente con mensajes descriptivos. Ejemplo: git commit -m "Crear página de inicio". 📝
+Cuando terminen una funcionalidad, hacer un pull request para revisión. 📬
+Revisar y Fusionar
+
+Revisar el código de su compañero en los pull requests y sugerir mejoras. 🔍
+Una vez aprobado, fusionar las ramas en main. ✔️
+Despliegue
+
+Usar GitHub Pages para publicar su sitio web y compartirlo con el mundo. 🌍
