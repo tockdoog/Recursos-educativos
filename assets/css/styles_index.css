@@ -1,12 +1,12 @@
 /* Variables de color */
 :root {
-    --color-primary: #e2d413;       /* Color principal */
+    --color-primary: #21a7beee;            /* Color principal */
     --color-secondary: #333;        /* Color secundario */
-    --color-background: #858585d2;  /* Color de fondo */
+    --color-background: #000000;  /* Color de fondo */
     --color-footer: #333;           /* Color del pie de página */
     --color-footer-text: #f4f4f4;   /* Color del texto en el pie de página */
     --color-hover: #1e90ff;         /* Color de hover para enlaces */
-    --color-muted: #666;            /* Color para texto menos prominente */
+    --color-muted: #666;            /* Color para texto menos prominente */ 
     --color-light: #fff;            /* Color claro para texto */
 }
 
