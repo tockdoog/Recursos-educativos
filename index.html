@@ -1,0 +1,146 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Define el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la visualización en dispositivos móviles -->
+    <title>Recursos Educativos 🎓</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="/assets/css/styles_index.css"> <!-- Enlaza una hoja de estilos CSS local -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlaza la hoja de estilos de Font Awesome para iconos -->
+</head>
+<body>
+    <header>
+        <div class="container"> <!-- Contenedor para alinear el contenido del encabezado -->
+            <div class="logo"> <!-- Sección del logo -->
+                <a href="/index.html" aria-label="Ir a la página principal">🎉 MiLogo 🎉</a> <!-- Enlace al inicio con un texto descriptivo -->
+            </div>
+            <nav> <!-- Elemento de navegación -->
+                <ul class="nav-links"> <!-- Lista no ordenada para los enlaces de navegación -->
+                    <li><a href="/index.html">🏠 Inicio</a></li> <!-- Enlace a la página de inicio -->
+                    <li><a href="/pag_bar/temas.html">📚 Temas</a></li> <!-- Enlace a la sección de temas -->
+                    <li><a href="/pag_bar/servicios.html">💼 Servicios</a></li> <!-- Enlace a la sección de servicios -->
+                    <li><a href="/pag_bar/nosotros.html">👥 Nosotros</a></li> <!-- Enlace a la sección de nosotros -->
+                    <li><a href="/pag_bar/contacto.html">📞 Contacto</a></li> <!-- Enlace a la sección de contacto -->
+                </ul>
+            </nav>
+            <div class="search-container"> <!-- Contenedor para la barra de búsqueda -->
+                <input type="text" placeholder="Buscar..." aria-label="Buscar recursos"> <!-- Campo de entrada para buscar recursos -->
+                <button type="submit">Buscar</button> <!-- Botón para enviar la búsqueda -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Temas -->
+        <section id="temas" class="temas"> <!-- Sección de temas de programación -->
+            <h2>Temas de Programación 🖥️</h2> <!-- Título de la sección -->
+            <div class="tema-lista"> <!-- Contenedor para la lista de temas -->
+                <div class="tema-item"> <!-- Elemento individual de tema -->
+                    <h3>GIT & Git HUB</h3> <!-- Título del tema -->
+                    <p>Recursos, tutoriales y documentación sobre GIT.</p> <!-- Descripción del tema -->
+                    <a href="/html/github.html" class="btn">Ver Recursos</a> <!-- Enlace para ver recursos del tema -->
+                </div>
+                <div class="tema-item"> <!-- Elemento individual de tema -->
+                    <h3>PYTHON</h3> <!-- Título del tema -->
+                    <p>Aprende sobre python, desde lo básico hasta lo avanzado.</p> <!-- Descripción del tema -->
+                    <a href="/html/python.html" class="btn">Ver Recursos</a> <!-- Enlace para ver recursos del tema -->
+                </div>
+                <div class="tema-item"> <!-- Elemento individual de tema -->
+                    <h3>JAVA</h3> <!-- Título del tema -->
+                    <p>Aprende sobre java, desde lo básico hasta lo avanzado.</p> <!-- Descripción del tema -->
+                    <a href="/html/java.html" class="btn">Ver Recursos</a> <!-- Enlace para ver recursos del tema -->
+                </div>
+                <div class="tema-item"> <!-- Elemento individual de tema -->
+                    <h3>CSS</h3> <!-- Título del tema -->
+                    <p>Conoce cómo puedes ponerle estilos a tus HTML.</p> <!-- Descripción del tema -->
+                    <a href="html/css.html" class="btn">Ver Recursos</a> <!-- Enlace para ver recursos del tema -->
+                </div>
+                <div class="tema-item"> <!-- Elemento individual de tema -->
+                    <h3>Django</h3> <!-- Título del tema -->
+                    <p>Conoce más sobre Django.</p> <!-- Descripción del tema -->
+                    <a href="html/django.css" class="btn">Ver Recursos</a> <!-- Enlace para ver recursos del tema -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de imágenes con descripciones -->
+        <section class="articulo"> <!-- Sección para imágenes destacadas -->
+            <h2>Imágenes Destacadas 🌟</h2> <!-- Título de la sección -->
+            <div class="galeria"> <!-- Contenedor para la galería de imágenes -->
+                <article class="item"> <!-- Artículo individual en la galería -->
+                    <img src="/assets/img/Imagenes_Git_and_Github/portada_github.png" alt="GITHUB" /> <!-- Imagen con descripción alternativa -->
+                    <p>GITHUB.</p> <!-- Descripción de la imagen -->
+                </article>
+                <article class="item"> <!-- Artículo individual en la galería -->
+                    <img src="imagen2.jpg" alt="Ciudad moderna" /> <!-- Imagen con descripción alternativa -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed.</p> <!-- Descripción de la imagen -->
+                </article>
+                <article class="item"> <!-- Artículo individual en la galería -->
+                    <img src="imagen3.jpg" alt="Playa tropical" /> <!-- Imagen con descripción alternativa -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed.</p> <!-- Descripción de la imagen -->
+                </article>
+            </div>
+            <button class="ver-mas">Ver más imágenes</button> <!-- Botón para ver más imágenes -->
+        </section>
+
+        <!-- Sección de videos -->
+        <section class="videos"> <!-- Sección para videos recomendados -->
+            <h2>Videos Recomendados 🎥</h2> <!-- Título de la sección -->
+            <div class="video-container"> <!-- Contenedor para la lista de videos -->
+                <div class="video-item"> <!-- Elemento individual de video -->
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen aria-label="Video Recomendado 1"></iframe> <!-- Video de YouTube integrado -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed.</p> <!-- Descripción del video -->
+                </div>
+                <div class="video-item"> <!-- Elemento individual de video -->
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen aria-label="Video Recomendado 2"></iframe> <!-- Video de YouTube integrado -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed.</p> <!-- Descripción del video -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección adicional de imágenes -->
+        <section class="imagenes-adicionales"> <!-- Sección para más imágenes -->
+            <h2>Más Imágenes 🌈</h2> <!-- Título de la sección -->
+            <div class="galeria"> <!-- Contenedor para la galería de imágenes adicionales -->
+                <article class="item"> <!-- Artículo individual en la galería -->
+                    <img src="/assets/Imagenes/Imagenes_Git_and_Github/portada_github.png" alt="PORTADAGIT" /> <!-- Imagen con descripción alternativa -->
+                    <p>Portada.</p> <!-- Descripción de la imagen -->
+                </article>
+                <article class="item"> <!-- Artículo individual en la galería -->
+                    <img src="imagen5.jpg" alt="Cataratas" /> <!-- Imagen con descripción alternativa -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed.</p> <!-- Descripción de la imagen -->
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container"> <!-- Contenedor para el pie de página -->
+            <div class="footer-links"> <!-- Sección de enlaces del pie de página -->
+                <h4>Navegación</h4> <!-- Título de la sección -->
+                <ul> <!-- Lista no ordenada para los enlaces -->
+                    <li><a href="#inicio">🏠 Inicio</a></li> <!-- Enlace a la sección de inicio -->
+                    <li><a href="#temas">📚 Temas</a></li> <!-- Enlace a la sección de temas -->
+                    <li><a href="#servicios">💼 Servicios</a></li> <!-- Enlace a la sección de servicios -->
+                    <li><a href="#nosotros">👥 Nosotros</a></li> <!-- Enlace a la sección de nosotros -->
+                </ul>
+            </div>
+    
+            <div class="footer-social"> <!-- Sección de redes sociales -->
+                <h4>Redes Sociales</h4> <!-- Título de la sección -->
+                <div class="social-icons"> <!-- Contenedor para los iconos de redes sociales -->
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a> <!-- Icono de Facebook -->
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <!-- Icono de Twitter -->
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a> <!-- Icono de Instagram -->
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> <!-- Icono de LinkedIn -->
+                </div>
+            </div>
+
+            <div class="footer-info"> <!-- Sección de información del pie de página -->
+                <h4>Información</h4> <!-- Título de la sección -->
+                <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados. 🎉</p> <!-- Copyright -->
+                <p><a href="#politica-privacidad">Política de Privacidad</a> | <a href="#terminos-servicio">Términos de Servicio</a></p> <!-- Enlaces a políticas -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
