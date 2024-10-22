@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub</title>
+    <link rel="stylesheet" href="/assets/css/github.css">
 </head>
 <body>
-    <p>Hola mundo</p>
+    <header>
+        <h1>GIT & GitHub</h1>
+    </header>
+    <nav>
+        <a href="#temas">Temas</a>
+        <a href="#comandos">Comandos</a>
+        <a href="#videos">Videos</a>
+    </nav>
+
+    <section id="temas">
+        <h2>Temas</h2>
+        <ul>
+            <li>Introducción a Git y GitHub</li>
+            <li>Creación de un repositorio</li>
+            <li>Creacion de llave SSH y vinculacion</li>
+            <li>Control de versiones</li>
+            <li>Colaboración en proyectos</li>
+            <li>Utilizacion de Comandos y Reglas</li>   
+        </ul>
+    </section>
+
+    <section id="comandos">
+        <h2>Lista de Comandos</h2>
+        <table>
+            <tr>
+                <th>Comando</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>git init</td>
+                <td>Inicializa un nuevo repositorio de Git.</td>
+            </tr>
+            <tr>
+                <td>git clone</td>
+                <td>Copia un repositorio remoto a tu máquina local.</td>
+            </tr>
+            <tr>
+                <td>git add .</td>
+                <td>Agrega todos los cambios al área de preparación.</td>
+            </tr>
+            <tr>
+                <td>git commit -m "mensaje"</td>
+                <td>Realiza un commit de los cambios en el área de preparación.</td>
+            </tr>
+            <tr>
+                <td>git push</td>
+                <td>Envía tus cambios al repositorio remoto.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="videos">
+        <h2>Videos Educativos</h2>
+        <div>
+            <h3>Introducción a GitHub</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=IFcWZgJzBt0&ab_channel=ComputerHoy.com" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h3>Uso de Git en Proyectos</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_video_aqui" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Recurso Educativo sobre GitHub</p>
+    </footer>
 </body>
 </html>

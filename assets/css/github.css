@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s; /* Transición para color y efecto */
+}
+
+nav a:hover {
+    color: #3498db;
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Transición para el efecto de hover */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+h1, h2, h3 {
+    margin-top: 0; /* Eliminar margen superior */
+    color: #34495e; /* Color para los encabezados */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: bold; /* Negrita en encabezados */
+}
+
+td {
+    background-color: #fff; /* Fondo blanco en celdas */
+    transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+td:hover {
+    background-color: #eaeaea; /* Color de fondo al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra en la parte superior */
+}
+
+/* Estilos para botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para botones */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom en botón */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Menú vertical en pantallas pequeñas */
+        margin: 5px 0; /* Espaciado vertical */
+    }
+
+    section {
+        padding: 15px; /* Menor padding en pantallas pequeñas */
+    }
+}
