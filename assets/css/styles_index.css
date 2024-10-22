@@ -1,0 +1,202 @@
+/* Variables de color */
+:root {
+    --color-primary: #21a7beee;            /* Color principal */
+    --color-secondary: #333;        /* Color secundario */
+    --color-background: #000000;  /* Color de fondo */
+    --color-footer: #333;           /* Color del pie de página */
+    --color-footer-text: #f4f4f4;   /* Color del texto en el pie de página */
+    --color-hover: #1e90ff;         /* Color de hover para enlaces */
+    --color-muted: #666;            /* Color para texto menos prominente */ 
+    --color-light: #fff;            /* Color claro para texto */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;                     /* Elimina márgenes predeterminados */
+    padding: 0;                    /* Elimina rellenos predeterminados */
+    box-sizing: border-box;        /* Incluye el padding y el borde en el tamaño total */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía del cuerpo */
+    background-color: var(--color-background);        /* Color de fondo del cuerpo */
+    color: var(--color-secondary);                     /* Color del texto del cuerpo */
+    line-height: 1.6;                                /* Altura de línea */
+    padding: 20px;                                   /* Relleno del cuerpo */
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: var(--color-primary);         /* Color de fondo del encabezado */
+    color: var(--color-light);                       /* Color del texto del encabezado */
+    padding: 20px 0;                                /* Relleno superior e inferior */
+    border-radius: 8px;                             /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);      /* Sombra del encabezado */
+    position: sticky;                               /* Fija el encabezado en la parte superior */
+    top: 0;                                         /* Alineación en la parte superior */
+}
+
+.container {
+    max-width: 1200px;                             /* Ancho máximo del contenedor */
+    margin: 0 auto;                                /* Centra el contenedor */
+    display: flex;                                 /* Usa flexbox para la disposición */
+    justify-content: space-between;                /* Espaciado entre elementos */
+    align-items: center;                           /* Centra verticalmente los elementos */
+    padding: 0 20px;                              /* Relleno lateral */
+}
+
+.logo a {
+    font-size: 28px;                               /* Tamaño de fuente del logo */
+    font-weight: bold;                             /* Negrita */
+    text-decoration: none;                         /* Sin subrayado */
+    color: var(--color-secondary);                 /* Color del texto del logo */
+}
+
+/* Estilos de navegación */
+nav {
+    flex-grow: 1;                                  /* Permite que la navegación crezca */
+    text-align: right;                             /* Alineación a la derecha */
+}
+
+.nav-links {
+    list-style: none;                              /* Sin viñetas en la lista */
+    display: flex;                                 /* Usa flexbox para la disposición */
+}
+
+.nav-links li {
+    margin-left: 20px;                             /* Espacio entre elementos de la lista */
+}
+
+.nav-links a {
+    text-decoration: none;                         /* Sin subrayado */
+    font-size: 16px;                              /* Tamaño de fuente de los enlaces */
+    color: var(--color-secondary);                 /* Color del texto de los enlaces */
+    padding: 10px;                                /* Relleno en los enlaces */
+    transition: color 0.3s ease;                  /* Transición suave para el color */
+}
+
+.nav-links a:hover {
+    color: var(--color-light);                     /* Color del texto al pasar el ratón */
+}
+
+/* Sección de Temas */
+.temas {
+    background-color: var(--color-light);         /* Color de fondo de la sección de temas */
+    padding: 20px;                                /* Relleno */
+    margin: 20px auto;                            /* Margen superior e inferior */
+    border-radius: 8px;                           /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);   /* Sombra */
+    max-width: 1200px;                            /* Ancho máximo */
+}
+
+.tema-lista {
+    display: flex;                                 /* Usa flexbox para la disposición */
+    flex-wrap: wrap;                              /* Permite que los elementos se ajusten */
+    justify-content: center;                       /* Centra los elementos */
+    gap: 20px;                                    /* Espacio entre elementos */
+}
+
+.tema-item {
+    background-color: var(--color-primary);       /* Color de fondo del ítem de tema */
+    color: var(--color-light);                     /* Color del texto del ítem de tema */
+    border-radius: 8px;                           /* Bordes redondeados */
+    padding: 20px;                                /* Relleno */
+    text-align: center;                           /* Alineación centrada */
+    flex: 1 1 calc(30% - 40px);                   /* Tamaño flexible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    /* Sombra */
+}
+
+.tema-item h3 {
+    margin-bottom: 10px;                          /* Margen inferior */
+}
+
+.tema-item .btn {
+    display: inline-block;                        /* Hace que el botón sea un bloque en línea */
+    background-color: var(--color-secondary);    /* Color de fondo del botón */
+    color: var(--color-light);                    /* Color del texto del botón */
+    padding: 10px 15px;                          /* Relleno del botón */
+    border-radius: 5px;                          /* Bordes redondeados del botón */
+    text-decoration: none;                        /* Sin subrayado en el botón */
+    transition: background-color 0.3s ease;     /* Transición suave para el color de fondo */
+}
+
+.tema-item .btn:hover {
+    background-color: var(--color-hover);        /* Color de fondo al pasar el ratón */
+}
+
+/* Sección de artículos e imágenes */
+.articulo, .videos, .imagenes-adicionales {
+    background-color: var(--color-light);        /* Color de fondo */
+    padding: 20px;                               /* Relleno */
+    margin: 20px auto;                           /* Margen superior e inferior */
+    border-radius: 8px;                          /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);  /* Sombra */
+    max-width: 1200px;                           /* Ancho máximo */
+}
+
+.galeria {
+    display: flex;                                /* Usa flexbox para la disposición */
+    flex-wrap: wrap;                             /* Permite que los elementos se ajusten */
+    gap: 20px;                                   /* Espacio entre elementos */
+    justify-content: center;                      /* Centra los elementos */
+}
+
+.galeria .item {
+    flex: 1 1 calc(33% - 40px);                  /* Tamaño flexible para los elementos */
+    text-align: center;                          /* Alineación centrada */
+    margin-bottom: 20px;                         /* Margen inferior */
+}
+
+.galeria img {
+    max-width: 100%;                             /* Ancho máximo de la imagen */
+    border-radius: 8px;                          /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out;     /* Transición suave para transformaciones */
+}
+
+.galeria img:hover {
+    transform: scale(1.05);                      /* Efecto de zoom al pasar el ratón */
+}
+
+.galeria p {
+    margin-top: 10px;                           /* Margen superior */
+    color: var(--color-muted);                   /* Color del texto menos prominente */
+    font-size: 0.9rem;                           /* Tamaño de fuente */
+}
+
+/* Estilos de videos */
+.videos .video-item {
+    margin-bottom: 30px;                         /* Margen inferior */
+    text-align: center;                          /* Alineación centrada */
+}
+
+.videos .video-item iframe {
+    width: 100%;                                 /* Ancho del iframe */
+    max-width: 560px;                            /* Ancho máximo del iframe */
+    border-radius: 8px;                          /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra */
+}
+
+.videos .video-item p {
+    margin-top: 10px;                           /* Margen superior */
+    font-size: 0.9rem;                           /* Tamaño de fuente */
+    color: var(--color-muted);                   /* Color del texto menos prominente */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .galeria .item {
+        flex: 1 1 100%;                          /* Elementos ocupan el 100% en pantallas pequeñas */
+    }
+
+    .videos .video-item iframe {
+        width: 100%;                             /* Ancho del iframe en pantallas pequeñas */
+    }
+
+    .tema-item {
+        flex: 1 1 100%;                          /* Elementos ocupan el 100% en pantallas pequeñas */
+    }
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: var(--
