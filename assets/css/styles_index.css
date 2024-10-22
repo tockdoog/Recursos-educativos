@@ -1,20 +1,20 @@
 /* Variables de color */
 :root {
     --color-primary: #21a7beee;            /* Color principal */
-    --color-secondary: #333;        /* Color secundario */
-    --color-background: #000000;  /* Color de fondo */
-    --color-footer: #333;           /* Color del pie de página */
-    --color-footer-text: #f4f4f4;   /* Color del texto en el pie de página */
-    --color-hover: #1e90ff;         /* Color de hover para enlaces */
-    --color-muted: #666;            /* Color para texto menos prominente */ 
-    --color-light: #fff;            /* Color claro para texto */
+    --color-secondary: #333;               /* Color secundario */
+    --color-background: #000000;           /* Color de fondo */
+    --color-footer: #333;                   /* Color del pie de página */
+    --color-footer-text: #f4f4f4;          /* Color del texto en el pie de página */
+    --color-hover: #1e90ff;                /* Color de hover para enlaces */
+    --color-muted: #666;                   /* Color para texto menos prominente */
+    --color-light: #fff;                   /* Color claro para texto */
 }
 
 /* Estilos generales */
 * {
-    margin: 0;                     /* Elimina márgenes predeterminados */
-    padding: 0;                    /* Elimina rellenos predeterminados */
-    box-sizing: border-box;        /* Incluye el padding y el borde en el tamaño total */
+    margin: 0;                             /* Elimina márgenes predeterminados */
+    padding: 0;                            /* Elimina rellenos predeterminados */
+    box-sizing: border-box;                /* Incluye el padding y el borde en el tamaño total */
 }
 
 body {
@@ -77,6 +77,35 @@ nav {
 
 .nav-links a:hover {
     color: var(--color-light);                     /* Color del texto al pasar el ratón */
+}
+
+/* Estilos de la barra de búsqueda */
+.search-container {
+    display: flex;                                 /* Flexbox para la barra de búsqueda */
+    align-items: center;                           /* Centra verticalmente los elementos */
+}
+
+.search-container input[type="text"] {
+    padding: 8px;                                 /* Espaciado interno */
+    border: 1px solid var(--color-secondary);     /* Borde */
+    border-radius: 4px;                           /* Esquinas redondeadas */
+    margin-right: 8px;                            /* Espacio entre el campo y el botón */
+    color: var(--color-secondary);                 /* Color del texto */
+    background-color: var(--color-light);         /* Fondo del campo de búsqueda */
+}
+
+.search-container button {
+    background-color: var(--color-primary);       /* Color del botón */
+    color: var(--color-light);                     /* Color del texto */
+    border: none;                                  /* Sin borde */
+    border-radius: 4px;                           /* Esquinas redondeadas */
+    padding: 8px 12px;                            /* Espaciado interno */
+    cursor: pointer;                               /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease;      /* Transición suave para el color de fondo */
+}
+
+.search-container button:hover {
+    background-color: var(--color-hover);         /* Color al pasar el ratón */
 }
 
 /* Sección de Temas */
@@ -160,43 +189,4 @@ nav {
 .galeria p {
     margin-top: 10px;                           /* Margen superior */
     color: var(--color-muted);                   /* Color del texto menos prominente */
-    font-size: 0.9rem;                           /* Tamaño de fuente */
-}
-
-/* Estilos de videos */
-.videos .video-item {
-    margin-bottom: 30px;                         /* Margen inferior */
-    text-align: center;                          /* Alineación centrada */
-}
-
-.videos .video-item iframe {
-    width: 100%;                                 /* Ancho del iframe */
-    max-width: 560px;                            /* Ancho máximo del iframe */
-    border-radius: 8px;                          /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra */
-}
-
-.videos .video-item p {
-    margin-top: 10px;                           /* Margen superior */
-    font-size: 0.9rem;                           /* Tamaño de fuente */
-    color: var(--color-muted);                   /* Color del texto menos prominente */
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .galeria .item {
-        flex: 1 1 100%;                          /* Elementos ocupan el 100% en pantallas pequeñas */
-    }
-
-    .videos .video-item iframe {
-        width: 100%;                             /* Ancho del iframe en pantallas pequeñas */
-    }
-
-    .tema-item {
-        flex: 1 1 100%;                          /* Elementos ocupan el 100% en pantallas pequeñas */
-    }
-}
-
-/* Estilos de pie de página */
-footer {
-    background-color: var(--
+    font-size
