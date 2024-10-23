@@ -17,7 +17,7 @@ MongoDB: Para un almacenamiento robusto de datos. 💾
 
 📦 Instalación
 1Clona el repositorio:
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+git clone git@github.com:tockdoog/Recursos-educativos.git
 Navega a la carpeta del proyecto
 cd nombre-del-repositorio
 Instala las dependencias:
