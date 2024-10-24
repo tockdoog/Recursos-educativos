@@ -1,39 +1,77 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s;
+/* Variables de color */
+:root {
+    --color-primary: #000; /* Color principal (negro) */
+    --color-secondary: #333; /* Color secundario */
+    --color-background: #000000; /* Color de fondo (blanco) */
+    --color-footer: #1f79d3; /* Color del pie de página (azul) */
+    --color-footer-text: #ecf0f1; /* Color del texto en el pie de página (blanco) */
+    --color-hover: #178fdf; /* Color de hover para enlaces (azul claro) */
+    --color-muted: #666; /* Color para texto menos prominente */
+    --color-light: #fff; /* Color claro para texto (blanco) */
+    --color-header-text: #fff; /* Color para encabezados (blanco) */
+    --color-table-header: #f2f2f2; /* Color para encabezados de tabla (gris claro) */
 }
 
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía del cuerpo */
+    line-height: 1.6;
+    margin: 20px;
+    background-color: var(--color-background); /* Color de fondo */
+    color: var(--color-secondary); /* Color del texto */
+}
+
+/* Estilos de encabezado */
 header {
-    background: #2c3e50;
-    color: #ecf0f1;
+    background-color: var(--color-footer); /* Fondo del encabezado */
+    color: var(--color-footer-text); /* Color del texto en el encabezado */
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.header-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.logo {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px; /* Espaciado debajo del logo */
+}
+
+/* Estilos de navegación */
 nav {
     margin: 10px 0;
 }
 
+nav ul {
+    list-style: none; /* Eliminar el estilo de lista */
+    padding: 0; /* Eliminar padding */
+    margin: 10px 0 0; /* Margen superior */
+}
+
+nav li {
+    display: inline; /* Mostrar elementos de lista en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
 nav a {
-    margin: 0 15px;
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.2s;
+    color: var(--color-footer-text); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición para el color */
 }
 
 nav a:hover {
-    color: #3498db;
-    transform: scale(1.1);
+    color: var(--color-hover); /* Color de hover para enlaces */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
+/* Sección */
 section {
     margin-bottom: 20px;
-    background: #fff;
+    background: var(--color-light); /* Color de fondo de las secciones (blanco) */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -41,14 +79,16 @@ section {
 }
 
 section:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
 }
 
+/* Encabezados */
 h1, h2, h3 {
     margin-top: 0;
-    color: #34495e;
+    color: var(--color-header-text); /* Usar variable para encabezados */
 }
 
+/* Listas y Tablas */
 ul {
     padding-left: 20px; /* Espaciado para listas */
 }
@@ -60,31 +100,32 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Bordes de tabla */
     padding: 12px;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--color-table-header); /* Usar variable para encabezados de tabla */
     text-align: left;
     font-weight: bold;
 }
 
 td {
-    background-color: #fff;
+    background-color: var(--color-light); /* Color de fondo de las celdas (blanco) */
     transition: background-color 0.3s;
 }
 
 td:hover {
-    background-color: #eaeaea;
+    background-color: #eaeaea; /* Color de fondo al pasar el ratón sobre celdas */
 }
 
+/* Estilos de pie de página */
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 15px 0;
-    background: #2c3e50;
-    color: #ecf0f1;
+    background: var(--color-footer); /* Fondo del pie de página (azul) */
+    color: var(--color-footer-text); /* Color del texto en el pie de página (blanco) */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,26 +133,30 @@ footer {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    background-color: var(--color-hover); /* Fondo del botón (azul claro) */
+    color: var(--color-light); /* Color del texto del botón (blanco) */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+    background-color: #2980b9; /* Color de fondo al pasar el ratón sobre el botón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
     nav a {
-        display: block;
-        margin: 5px 0;
+        display: block; /* Mostrar enlaces de navegación en bloque en pantallas pequeñas */
+        margin: 5px 0; /* Espaciado vertical */
     }
 
     section {
-        padding: 15px;
+        padding: 15px; /* Ajustar el espaciado en secciones */
+    }
+
+    .logo {
+        max-width: 80px; /* Ajustar el tamaño del logo en pantallas pequeñas */
     }
 }
