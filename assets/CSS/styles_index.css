@@ -35,7 +35,8 @@ header {
     position: sticky;                               /* Fija el encabezado en la parte superior */
     top: 0;                                         /* Alineación en la parte superior */
 }
-h2,h1 {
+
+h2, h1 {
     text-align: center;
 }
 
@@ -192,4 +193,110 @@ nav {
 .galeria p {
     margin-top: 10px;                           /* Margen superior */
     color: var(--color-muted);                   /* Color del texto menos prominente */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
+    padding: 40px 0;
+    border-top: 1px solid var(--color-muted);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links,
+.footer-social,
+.footer-info,
+.footer-subscription {
+    flex: 1 1 200px;
+    margin: 20px 0;
+}
+
+.footer-links h4,
+.footer-social h4,
+.footer-info h4,
+.footer-subscription h4 {
+    margin-bottom: 10px;
+    color: var(--color-light);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--color-hover);
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: var(--color-light);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--color-hover);
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-info a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    color: var(--color-hover);
+}
+
+.footer-subscription form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-subscription input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-subscription button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscription button:hover {
+    background-color: var(--color-hover);
 }
