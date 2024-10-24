@@ -1,128 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/CSS/styles_contacto.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo -->
+    <title>Contacto - Milogo</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!-- Estilo de Bootstrap -->
+    <link rel="stylesheet" href="./assets/CSS/styles_contacto.css"> <!-- Estilo personalizado para la página -->
 </head>
-<body class="bg-dark">
-    <nav id="menu" class="navbar navbar-expand-lg bg-info m-3 opacity-75">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-5" href="/index.html">Milogo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse m-3" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/assets/pag_bar/temas.html">Temas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/assets/pag_bar/servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/assets/pag_bar/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/assets/pag_bar/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+<body class="bg-dark"> <!-- Clase para establecer un fondo oscuro -->
+    <nav id="menu" class="navbar navbar-expand-lg bg-info m-3 opacity-75"> <!-- Barra de navegación con fondo y margenes -->
+        <div class="container-fluid"> <!-- Contenedor fluido para la barra de navegación -->
+          <a class="navbar-brand mx-5" href="../../index.html">Milogo</a> <!-- Logo y enlace a la página principal -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Icono para el botón de menú -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Contenido que se colapsa en dispositivos pequeños -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- Lista de navegación -->
+                    <li class="nav-item"> <!-- Item de la lista -->
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+                    </li>
+                    <li class="nav-item"> <!-- Item de la lista -->
+                        <a class="nav-link" href="/assets/pag_bar/temas.html">Temas</a> <!-- Enlace a la página de temas -->
+                    </li>
+                    <li class="nav-item"> <!-- Item de la lista -->
+                        <a class="nav-link" href="/assets/pag_bar/servicios.html">Servicios</a> <!-- Enlace a la página de servicios -->
+                    </li>
+                    <li class="nav-item"> <!-- Item de la lista -->
+                        <a class="nav-link" href="/assets/pag_bar/nosotros.html">Nosotros</a> <!-- Enlace a la página de nosotros -->
+                    </li>
+                    <li class="nav-item"> <!-- Item de la lista -->
+                        <a class="nav-link" href="/assets/pag_bar/contacto.html">Contacto</a> <!-- Enlace a la página de contacto -->
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <section class="bg-white m-3 p-5">
-        <h1 class="text-dark">Frank Garzon</h1>
-        <!-- Primer acordeón con un id único -->
-        <div class="accordion" id="accordionExample1">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <main> <!-- Sección principal del contenido -->
+        <section class="bg-white m-3 p-5"> <!-- Sección con fondo blanco y márgenes -->
+            <h1 class="text-dark">Frank Garzon</h1> <!-- Título principal de la sección -->
+            <div class="accordion" id="accordionExample1"> <!-- Primer acordeón -->
+                <div class="accordion-item"> <!-- Item del acordeón -->
+                    <h2 class="accordion-header"> <!-- Encabezado del acordeón -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1 <!-- Título del acordeón -->
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1"> <!-- Contenido del acordeón -->
+                        <div class="accordion-body">
+                            <strong>Este es el contenido del primer acordeón.</strong> 
+                            Se muestra por defecto, hasta que el plugin de colapso añada las clases apropiadas.
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- Repetir para otros items del acordeón -->
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
+        </section>
 
-      <section class="bg-white m-3 p-5">
-        <h1 class="text-dark">Jorge Hernandez</h1>
-        <!-- Segundo acordeón con un id único diferente -->
-        <div class="accordion" id="accordionExample2">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <section class="bg-white m-3 p-5"> <!-- Segunda sección con acordeón -->
+            <h1 class="text-dark">Jorge Hernandez</h1> <!-- Título de la sección -->
+            <div class="accordion" id="accordionExample2"> <!-- Segundo acordeón -->
+                <div class="accordion-item"> <!-- Item del acordeón -->
+                    <h2 class="accordion-header"> <!-- Encabezado del acordeón -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Accordion Item #1 <!-- Título del acordeón -->
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2"> <!-- Contenido del acordeón -->
+                        <div class="accordion-body">
+                            <strong>Este es el contenido del primer acordeón.</strong> 
+                            Se muestra por defecto, hasta que el plugin de colapso añada las clases apropiadas.
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- Repetir para otros items del acordeón -->
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
+        </section>
+    </main>
 
     <!-- Incluye los archivos de JavaScript de Bootstrap al final del cuerpo -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Script de Bootstrap para funcionalidades -->
 </body>
 </html>

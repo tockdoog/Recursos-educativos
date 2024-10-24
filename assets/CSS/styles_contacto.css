@@ -1,3 +1,57 @@
-body{
-    background-color: black;
+body {
+    background-color: #000; /* Establece el fondo de la página en negro */
+    color: #f8f9fa; /* Color de texto claro para mejorar la legibilidad */
+    font-family: 'Arial', sans-serif; /* Define la fuente principal de la página */
+    line-height: 1.6; /* Aumenta el espaciado entre líneas para mejor lectura */
+}
+
+.navbar {
+    border-radius: 0.5rem; /* Bordes redondeados para la barra de navegación */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto de los enlaces en la barra de navegación */
+}
+
+.nav-link:hover {
+    color: #000; /* Cambia el color de texto al pasar el ratón */
+    background-color: #ffc107; /* Cambia el fondo al pasar el ratón */
+}
+
+.accordion-button {
+    background-color: #17a2b8; /* Color de fondo de los botones de acordeón */
+    color: #fff; /* Color de texto de los botones de acordeón */
+}
+
+.accordion-button:hover {
+    background-color: #138496; /* Cambia el fondo al pasar el ratón sobre el botón */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #138496; /* Color de fondo cuando el acordeón está expandido */
+    color: #fff; /* Color de texto cuando el acordeón está expandido */
+}
+
+.accordion-body {
+    background-color: #f8f9fa; /* Color de fondo del cuerpo del acordeón */
+    color: #000; /* Color de texto del cuerpo del acordeón */
+    border-radius: 0.5rem; /* Bordes redondeados para el cuerpo del acordeón */
+}
+
+section {
+    border-radius: 0.5rem; /* Bordes redondeados para las secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad a las secciones */
+}
+
+h1 {
+    margin-bottom: 1.5rem; /* Espaciado inferior para los títulos de las secciones */
+    font-size: 2rem; /* Tamaño de fuente para los títulos */
+}
+
+.m-3 {
+    margin: 1rem; /* Espaciado consistente para márgenes */
+}
+
+.p-5 {
+    padding: 2rem; /* Espaciado consistente para rellenos */
 }
