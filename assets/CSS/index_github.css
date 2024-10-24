@@ -4,12 +4,12 @@
     --color-secondary: #333; /* Color secundario */
     --color-background: #000000; /* Color de fondo (blanco) */
     --color-footer: #1f79d3; /* Color del pie de página (azul) */
-    --color-footer-text: #ecf0f1; /* Color del texto en el pie de página (blanco) */
+    --color-footer-text: #fffefe; /* Color del texto en el pie de página (blanco) */
     --color-hover: #178fdf; /* Color de hover para enlaces (azul claro) */
-    --color-muted: #666; /* Color para texto menos prominente */
-    --color-light: #fff; /* Color claro para texto (blanco) */
-    --color-header-text: #fff; /* Color para encabezados (blanco) */
-    --color-table-header: #f2f2f2; /* Color para encabezados de tabla (gris claro) */
+    --color-muted: #000000; /* Color para texto menos prominente */
+    --color-light: #ffffff; /* Color claro para texto (blanco) */
+    --color-header-text: #000000; /* Color para encabezados (blanco) */
+    --color-table-header: #000000; /* Color para encabezados de tabla (gris claro) */
 }
 
 /* Estilos generales */
@@ -23,7 +23,10 @@ body {
 
 /* Estilos de encabezado */
 header {
-    background-color: var(--color-footer); /* Fondo del encabezado */
+    background-image: url('../img/tu_imagen_de_fondo.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Cubrir todo el espacio del header */
+    background-position: left; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
     color: var(--color-footer-text); /* Color del texto en el encabezado */
     padding: 20px 0;
     text-align: center;
